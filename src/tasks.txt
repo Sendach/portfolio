@@ -1,3 +1,0 @@
-5. Fill out testimonials
-6. Fix the form not sending emails
-10. Make the navigation dots show active one

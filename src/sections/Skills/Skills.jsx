@@ -18,7 +18,6 @@ const Skills = () => {
 
     const fetchExperiences = async () => {
       const data = await client.fetch('*[_type == "experiences"] | order(_createdAt asc)');
-      console.log(data)
       setExperience(data);
     }
 

@@ -21,29 +21,24 @@ const Contact = () => {
   }
   
   const handleSubmit = async (e) => {
-    setLoading(true);
-    console.log('1')
-    const contact = {
-      _type: 'contact',
+    setLoading(true)
+
+    emailjs.send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
+      {
       name: name,
-      email: email,
       message: message,
-    }
-    console.log('2')
-    const success = await client.create(contact);
-    if (success) {
+      email: email
+      }, 
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    )
+    .then((result) => {
       setLoading(false);
       setIsFormSubmitted(true)
-    }
-    console.log('3')
-    console.log('sending email')
-    console.log(e.target.value)
-    emailjs.sendForm('service_iv7jtoo', 'template_wlmfrjx', form.current, 'DFlc-45pQ7bIvwdhz')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    }, (error) => {
+        console.log(error.text);
+    });
   }
 
   return (
