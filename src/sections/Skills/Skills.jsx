@@ -69,14 +69,14 @@ const Skills = () => {
                       <h4 className="bold-text">{job.name}</h4>
                       <p className="p-text">{job.company}</p>
                     </motion.div>
-                    <ReactToolTip 
+                    {/* <ReactToolTip 
                       id={job.name}
                       effect="solid"
                       arrowColor="#fff"
                       class="skills-tooltip"
                     >
                       {job.desc}
-                    </ReactToolTip>
+                    </ReactToolTip> */}
                   </>
                 ))}
               </motion.div>
