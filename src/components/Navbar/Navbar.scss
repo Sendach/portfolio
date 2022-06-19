@@ -14,9 +14,7 @@
 }
 
 .app__navbar-logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  position: absolute;
 
   img {
     width: 2.5rem; // 90px
@@ -32,6 +30,13 @@
 
   h3 {
     color: var(--secondary-color);
+  }
+
+  @media screen and (max-width: 900px) {
+    position:relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 

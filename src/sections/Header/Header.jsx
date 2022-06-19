@@ -15,7 +15,7 @@ const Header = () => {
         <span className="component">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'greeting'}<span >=</span><span className="variable">{'{'}greeting{`}`}</span></span> <br />
         <span className="component">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'name'}<span >=</span><span className="variable">{'{'}name{`}`}</span></span> <br />
         <span className="component">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'role'}<span >=</span><span className="variable">{'{'}role{`}`}</span></span> <br />
-        <>{'>'}</>
+        <>{'/>'}</>
       </h2>
     </>
   );
