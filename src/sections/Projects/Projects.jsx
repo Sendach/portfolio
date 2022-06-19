@@ -41,7 +41,7 @@ const Projects = () => {
   return (
     <>
       <h2 className="head-text">
-        My Creative <span>Portfolio</span>
+        My <span>Projects</span>
       </h2>
 
       <div className="app__project-filter">

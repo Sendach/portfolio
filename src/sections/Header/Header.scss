@@ -29,3 +29,22 @@
     }
   }
 }
+
+.hero-static {
+  font-size: 7rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--black-color);
+  text-transform: capitalize;
+
+  span {
+    color: var(--secondary-color);
+  }
+}
+
+.app__arrow-down {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
