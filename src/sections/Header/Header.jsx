@@ -12,7 +12,7 @@ const Header = () => {
       <h1 className="hero-static">
         <span>Tarik Neaj</span>
       </h1>
-      <h1>I'm a <span>Full Stack Developer</span></h1>
+      <h1>I'm a Full Stack Developer</h1>
       <a href="#about" className="app__arrow-down">
         <motion.div
           animate={{ scale: [1 , 0.9, 1] }}

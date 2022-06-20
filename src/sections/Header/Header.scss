@@ -23,14 +23,18 @@
     .variable {
       color: #79b8ff;
     }
-
-    @media screen and (max-width: 600px) {
-      font-size: 2rem;
-    }
   }
 
   h1 {
     text-align: center;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 460px) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -43,7 +47,16 @@
 
   span {
     color: var(--secondary-color);
+
+    @media screen and (max-width: 600px) {
+      font-size: 5rem;
+    }
+  
+    @media screen and (max-width: 460px) {
+      font-size: 3.8rem;
+    }
   }
+
 }
 
 .app__arrow-down {
