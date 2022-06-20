@@ -36,4 +36,8 @@
   @media screen and (max-width: 900px) {
     display: none;
   }
+
+  @media screen and (min-width: 2000px) {
+    left: 8rem;
+  }
 }
