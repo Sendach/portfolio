@@ -1,9 +1,9 @@
 .app__footer {
   width: 100%;
-  position: fixed; 
+ 
   bottom: 0;
   pointer-events: none;
-
+  position: fixed;
   display: flex;
 }
 
@@ -11,6 +11,10 @@
   display: flex;
   flex-direction: column;
   
+}
+
+.app__socials {
+
 }
 
 .copyright {
@@ -21,6 +25,9 @@
   justify-content: flex-end;
   align-items: flex-end;
   pointer-events: auto;
+  position: absolute;
+  left: 5rem;
+
 
   p {
     color: var(--black-color);
