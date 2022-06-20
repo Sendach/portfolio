@@ -5,15 +5,15 @@ import './FloatingFooter.scss'
 
 const FloatingFooter = () => {
   return (
-    <div className="app__footer">
-      <SocialMedia />
-    
+    <>
+      <div className="app__footer">
+        <SocialMedia />
+      </div>
       <div className="copyright">
         <p className="p-text">All rights reserved</p>
         <p className="p-text">@ 2022 Tarik Neaj</p>
       </div>
-
-    </div>
+    </>
   );
 }
 
