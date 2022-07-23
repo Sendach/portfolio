@@ -1,6 +1,8 @@
 import React from 'react';
-import { IoArrowDownOutline } from 'react-icons/io5';
+import { BiChevronDownCircle } from 'react-icons/bi'
+
 import { motion } from 'framer-motion';
+import Typed from 'react-typed';
 
 import { AppWrap, MotionWrap} from '../../wrappers';
 import './Header.scss';
@@ -8,19 +10,31 @@ import './Header.scss';
 const Header = () => {
   return (
     <>
-      <h1>Hey, my name is </h1>
-      <h1 className="hero-static">
-        <span>Tarik Neaj</span>
-      </h1>
-      <h1>I'm a Full Stack Developer</h1>
-      <a href="#about" className="app__arrow-down">
-        <motion.div
-          animate={{ scale: [1 , 0.9, 1] }}
-          transition={{ duration: 2, ease: 'easeInOut', repeat: Infinity }}
-        >
-          <IoArrowDownOutline size="4rem" />
-        </motion.div> 
-      </a>
+      <div className="app__header-content">
+        <h2>I Am Tarik Neaj.</h2>
+        <Typed
+          className="app__header-loop"
+          strings={[
+            "Software Engineer",
+            "Full Stack Developer",
+            "Freelance Developer"
+          ]}
+          typeSpeed={25}
+          backSpeed={25}
+          startDelay={100}
+          backDelay={2000}
+          loop
+          
+        />
+        <a href="#about" className="app__arrow-down">
+          <motion.div
+            animate={{ y: [0, 55, 35, 55, 45, 55,  0] }}
+            transition={{ duration: 5, type: "spring", repeat: Infinity, times: [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1] }}
+          >
+            <BiChevronDownCircle size="4rem" />
+          </motion.div> 
+        </a>
+      </div>
     </>
   );
 }
@@ -30,14 +44,3 @@ export default AppWrap(
   'home',
   'app__primarybg'
 );
-
-{/* <h2 className='header-text'>
-<><span>const</span> greeting <span>=</span> <span className="string">'Hello!'</span><span>;</span></> <br />
-<><span>const</span> name <span>=</span> <span className="string">'Tarik Neaj'</span><span>;</span></> <br />
-<><span>const</span> role <span>=</span> <span className="string">'Full Stack Developer'</span><span>;</span></> <br /><br /> 
-<>{'<Header '}</> <br />
-<span className="component">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'greeting'}<span >=</span><span className="variable">{'{'}greeting{`}`}</span></span> <br />
-<span className="component">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'name'}<span >=</span><span className="variable">{'{'}name{`}`}</span></span> <br />
-<span className="component">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'role'}<span >=</span><span className="variable">{'{'}role{`}`}</span></span> <br />
-<>{'/>'}</>
-</h2> */}
